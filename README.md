@@ -7,6 +7,8 @@ Instalar ``WSL2`` e o terminal ``ZSH`` no Windows
 
 > https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
 
+> https://pureinfotech.com/install-wsl-windows-11/
+
 # 
 
 ### Digite no PowerShell Admin:
@@ -21,11 +23,15 @@ atualize o kernel ``wsl --update``
 
 att pacotes Ubuntu ``sudo apt update && sudo apt upgrade``
 
-<details open>
+definir como arquitetura padrão ``wsl --set-default-version 2``
+
+<details>
   <summary>Distro específica</summary>
 
   ``wsl --list --online``
   ``wsl --install -d DISTRO-NAME``
+  
+  para descobrir o nome da distro atual digite ``wsl --list --verbose``
 </details>
 
 # 
@@ -35,16 +41,11 @@ att pacotes Ubuntu ``sudo apt update && sudo apt upgrade``
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
-### Baixe e instale esta atualização do kernel WSL 2 (obrigatório).
+### Baixe o Windows Subsystem for Linux App
 
 > https://apps.microsoft.com/store/detail/windows-subsystem-for-linux/9P9TQF7MRM4R?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab
 
-para descobrir o nome da distro digite ``wsl --list --verbose``
 
-### definir como arquitetura padrão
-```
-wsl --set-default-version 2
-```
 
 ### ZSH
 
