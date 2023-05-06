@@ -1,57 +1,22 @@
 # WSL2-ZSH
 Instalar ``WSL2`` e o terminal ``ZSH`` no Windows
 
+> https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password
 
 
-> 
-```
-https://docs.microsoft.com/en-us/windows/wsl/install-win10
-```
+### PowerShell Admin: digite: 
 
-### Passo 1 (PowerShell Admin): 
-
-digite: 
 ```
 wsl --install
 ```
-e depois 
 ```
 wsl --set-default-version 2
 ```
 
-<details>
-  <summary>Pc mais velhos use:</summary>
-  
-```
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart 
-```
-```
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-```
-
-</details>
-
-### Passo 2
-REINICIE O COMPUTADOR
-
-### Passo 3 (Download the Linux kernel update package):
-```
-https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
-```
-
-### Passo 4 (PowerShell Admin):
-```
-wsl --set-default-version 2
-```
-
-### Passo 5 (Instale o docker):
-
-Tutorial: 
-```
-https://docs.docker.com/docker-for-windows/install/
-```
+att pacotes Ubuntu ``sudo apt update && sudo apt upgrade``
 
 ### ZSH
+
 ```
 sudo apt install zsh -y
 sudo apt-get install powerline fonts-powerline -y
@@ -61,4 +26,12 @@ chsh -s /bin/zsh
 
 # REBOOT
 # sudo reboot
+```
+
+
+### Passo 5 (Instale o docker):
+
+Tutorial: 
+```
+https://docs.docker.com/docker-for-windows/install/
 ```
