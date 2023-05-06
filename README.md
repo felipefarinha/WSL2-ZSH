@@ -12,8 +12,23 @@ wsl --install
 ```
 wsl --set-default-version 2
 ```
+atualize o kernel ``wsl --update``
 
 att pacotes Ubuntu ``sudo apt update && sudo apt upgrade``
+
+<details>
+  <summary>Distro específica</summary>
+
+  ``wsl --list --online``
+  ``wsl --install -d DISTRO-NAME``
+</details>
+
+### Habilitar a plataforma de máquina virtual
+```
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+```
+
+### aqui
 
 ### ZSH
 
