@@ -1,4 +1,4 @@
-# WSL2-ZSH
+# WSL2-ZSH oh my zsh
 Instalar ``WSL2`` e o terminal ``ZSH`` no Windows
 
 ### Links referência
